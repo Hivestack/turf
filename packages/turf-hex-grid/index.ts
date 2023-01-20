@@ -92,7 +92,7 @@ function hexGrid<P = GeoJsonProperties>(
   const cosines = [];
   const sines = [];
   for (let i = 0; i < 6; i++) {
-    const angle = ((2 * Math.PI) / 6) * i;
+    const angle = (Math.PI / 6) + (((2 * Math.PI) / 6) * i);
     cosines.push(Math.cos(angle));
     sines.push(Math.sin(angle));
   }
